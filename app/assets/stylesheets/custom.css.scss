@@ -3,3 +3,12 @@
 .chatbox {
   height: 450px;
 }
+
+#messages {
+  height: 100%;
+  overflow: auto;
+}
+
+.ui.card > .extra {
+  min-height: auto !important;
+}
