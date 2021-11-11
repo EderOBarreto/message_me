@@ -15,7 +15,7 @@
         <%= form_with url: messages_path, class: "ui reply form", remote: true, scope: :message, method: :post do |f| %>
             <div class="field">
               <div class="ui fluid icon input">
-                <%= f.text_field :body, placeholder: "Enter a message..." %>
+                <%= f.text_field :body, required: true, placeholder: "Enter a message..." %>
                 <%= f.button '<i class="bordered inverted orange edit icon"></i>'.html_safe %>
               </div>
             </div>
